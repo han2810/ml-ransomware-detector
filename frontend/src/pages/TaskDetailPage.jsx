@@ -22,7 +22,7 @@ export default function TaskDetailPage() {
   if (!task) return <p className="muted">Đang tải task…</p>;
   return <section className="narrow"><Link className="back" to="/history">← Lịch sử</Link>
     <span className="eyebrow">TASK {task.task_id.slice(0, 8)}</span><h1>{task.filename}</h1>
+    {task.model_name && <p className="muted">Model đã chọn: {task.model_name}</p>}
     <ProgressBox task={task} /><ResultCard task={task} />
   </section>;
 }
-

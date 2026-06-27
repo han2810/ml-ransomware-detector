@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 from flask import Blueprint, current_app, jsonify
 
-from ..services.predict_service import PredictService
+from ..services.predict_service import DEFAULT_MODEL_ID, PredictService
 from ..utils.response_utils import public_task
 
 
@@ -19,9 +19,9 @@ def predict_again(task_id):
         return jsonify(error="File dac trung chua san sang."), 409
     try:
         frame = pd.read_excel(excel_path, engine="openpyxl")
-        prediction = PredictService().predict(frame)
+        model_id = task.get("model_id", DEFAULT_MODEL_ID)
+        prediction = PredictService().predict(frame, model_id)
         task = report_service.update_task(task_id, prediction=prediction)
         return jsonify(public_task(task))
     except Exception as exc:
         return jsonify(error=str(exc)), 500
-
