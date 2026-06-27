@@ -1,0 +1,11 @@
+{
+  "2625469": "DIRECTORY:CREATED:c:\\users\\administrator",
+  "2625487": "DIRECTORY:CREATED:c:\\users\\administrator\\appdata",
+  "2625820": "DIRECTORY:CREATED:c:\\users\\administrator\\appdata\\local\\microsoft\\windows\\wer\\reportarchive",
+  "2633869": "DIRECTORY:CREATED:c:\\users\\administrator\\appdata\\roaming",
+  "2636843": "DIRECTORY:ENUMERATED:c:\\documents and settings\\*.*",
+  "2643480": "DIRECTORY:ENUMERATED:c:\\perflogs\\*.*",
+  "2643483": "DIRECTORY:ENUMERATED:c:\\perflogs\\admin\\*.*",
+  "2682340": "DIRECTORY:ENUMERATED:c:\\users\\administrator",
+  "2722838": "DIRECTORY:ENUMERATED:c:\\windows\\system32\\*.*"
+}

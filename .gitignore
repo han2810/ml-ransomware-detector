@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+frontend/dist/
+backend/app/storage/samples/*
+backend/app/storage/reports/*
+backend/app/storage/excels/*
+backend/app/storage/results/*
+!backend/app/storage/**/.gitkeep
+backend/.env

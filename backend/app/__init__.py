@@ -1,0 +1,2 @@
+"""Cuckoo Web backend package."""
+

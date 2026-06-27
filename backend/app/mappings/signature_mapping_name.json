@@ -1,0 +1,22 @@
+{
+  "6468069": "SIGNATURE:allocates_execute_remote_process",
+  "6468070": "SIGNATURE:allocates_rwx",
+  "6468080": "SIGNATURE:antisandbox_foregroundwindows",
+  "6468089": "SIGNATURE:antivm_disk_size",
+  "6468099": "SIGNATURE:antivm_queries_computername",
+  "6468124": "SIGNATURE:console_output",
+  "6468132": "SIGNATURE:dead_host",
+  "6468147": "SIGNATURE:exe_appdata",
+  "6468152": "SIGNATURE:has_authenticode",
+  "6468163": "SIGNATURE:injection_modifies_memory",
+  "6468165": "SIGNATURE:injection_ntsetcontextthread",
+  "6468166": "SIGNATURE:injection_process_search",
+  "6468169": "SIGNATURE:injection_runpe",
+  "6468170": "SIGNATURE:injection_write_memory",
+  "6468193": "SIGNATURE:network_http",
+  "6468195": "SIGNATURE:network_icmp",
+  "6468200": "SIGNATURE:nolookup_communication",
+  "6468202": "SIGNATURE:origin_langid",
+  "6468204": "SIGNATURE:packer_entropy",
+  "6468211": "SIGNATURE:persistence_autorun"
+}

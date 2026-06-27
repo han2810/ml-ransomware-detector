@@ -1,0 +1,18 @@
+{
+  "1026936": "FILE:EXISTS:c:\\",
+  "1542461": "FILE:EXISTS:c:\\programdata\\microsoft\\windows\\start menu\\programs",
+  "1668009": "FILE:EXISTS:c:\\users",
+  "1808559": "FILE:FAILED:\\device\\netbt_tcpip_{846ee342-7039-11de-9d20-806e6f6e6963}",
+  "1845849": "FILE:FAILED:c:\\users\\administrator\\appdata\\local\\temp",
+  "1924020": "FILE:OPENED:\\\\?\\pipe\\wkssvc",
+  "1924061": "FILE:OPENED:c:\\",
+  "1927580": "FILE:OPENED:c:\\program files (x86)",
+  "2055798": "FILE:OPENED:c:\\program files\\windows nt\\accessories\\wordpad.exe",
+  "2117027": "FILE:OPENED:c:\\windows\\globalization\\sorting\\sortdefault.nls",
+  "2118086": "FILE:OPENED:c:\\windows\\system32",
+  "2120431": "FILE:OPENED:c:\\windows\\system32\\en-us\\imageres.dll.mui",
+  "2120452": "FILE:OPENED:c:\\windows\\system32\\en-us\\netmsg.dll.mui",
+  "2129256": "FILE:READ:\\\\?\\pipe\\wkssvc",
+  "2185628": "FILE:RECREATED:\\??\\nsi",
+  "2195841": "FILE:WRITTEN:\\\\?\\pipe\\wkssvc"
+}
