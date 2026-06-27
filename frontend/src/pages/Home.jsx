@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return <section className="hero">
     <span className="eyebrow">AUTOMATED MALWARE ANALYSIS</span>
-    <h1>Phân tích ransomware<br /><em>an toàn và có hệ thống.</em></h1>
+    <h1>Phân tích ransomware</h1>
     <p>Gửi mẫu tới Cuckoo Sandbox, trích xuất đặc trưng hành vi và nhận dự đoán từ mô hình máy học trong một quy trình duy nhất.</p>
     <div className="actions"><Link className="primary button-link" to="/submit">Phân tích mẫu</Link><Link className="secondary button-link" to="/history">Xem lịch sử</Link></div>
     <div className="feature-grid">

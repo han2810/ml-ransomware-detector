@@ -24,8 +24,8 @@ class CuckooService:
         self.predict_service = PredictService()
         self._executor = ThreadPoolExecutor(max_workers=2, thread_name_prefix="cuckoo")
 
-    def start(self, task_id, sample_path):
-        self._executor.submit(self._run, task_id, sample_path)
+    def start(self, task_id, sample_path, model_id):
+        self._executor.submit(self._run, task_id, sample_path, model_id)
 
     def submit_sample(self, sample_path):
         errors = []
@@ -90,7 +90,7 @@ class CuckooService:
         with urllib.request.urlopen(request, timeout=timeout) as response:
             return json.loads(response.read().decode("utf-8", errors="replace"))
 
-    def _run(self, task_id, sample_path):
+    def _run(self, task_id, sample_path, model_id):
         try:
             self.report_service.update_task(task_id, status="submitting", progress=5,
                                             message="Dang gui mau len Cuckoo...")
@@ -125,7 +125,7 @@ class CuckooService:
             self.report_service.update_task(task_id, status="predicting", progress=95,
                                             excel_path=str(excel_path),
                                             message="Dang du doan...")
-            prediction = self.predict_service.predict(frame)
+            prediction = self.predict_service.predict(frame, model_id)
             self.report_service.update_task(task_id, status="completed", progress=100,
                                             prediction=prediction, warnings=warnings,
                                             message="Phan tich hoan tat.")

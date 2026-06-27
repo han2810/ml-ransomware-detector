@@ -7,14 +7,15 @@ async function request(path, options) {
   return data;
 }
 
-export function uploadSample(file) {
+export function uploadSample(file, modelId) {
   const body = new FormData();
   body.append("file", file);
+  body.append("model_id", modelId);
   return request("/upload", { method: "POST", body });
 }
 
+export const getModels = () => request("/models");
 export const getTasks = () => request("/tasks");
 export const getTask = (id) => request(`/tasks/${id}`);
 export const predictAgain = (id) => request(`/predict/${id}`, { method: "POST" });
 export const artifactUrl = (path) => `${API_BASE}${path.replace(/^\/api/, "")}`;
-
